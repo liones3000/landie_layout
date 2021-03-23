@@ -1,0 +1,10 @@
+.nav {
+  font-size: 14px;
+  line-height: 1.714;
+  color: $color-kashmir-blue;
+  &__item {
+    &:not(:last-child) {
+      margin-right: 60px;
+    }
+  }
+}

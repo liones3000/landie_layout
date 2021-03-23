@@ -1,0 +1,27 @@
+.top {
+  max-height: 1110px;
+  height: 100vh;
+  background: url("../img/sprite.svg#designer") right center / 71% no-repeat;
+  margin-bottom: 77px;
+  &__article {
+    padding-top: 27.3%;
+    margin-left: -1px;
+  }
+  &__title {
+    font-size: 50px;
+    line-height: 1.32;
+    letter-spacing: 1px;
+    margin-bottom: 22px;
+  }
+  &__descr {
+    color: $color-kashmir-blue;
+    font-size: 18px;
+    line-height: 1.66;
+    margin-bottom: 69px;
+    p {
+      &:not(:last-child) {
+        margin-bottom: 17px;
+      }
+    }
+  }
+}
