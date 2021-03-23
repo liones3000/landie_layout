@@ -1,0 +1,42 @@
+.footer {
+  background: #e7ecff;
+  &__copyr {
+  }
+  &__nav {
+    padding: 20px 0;
+    color: #929ecc;
+  }
+}
+
+.copyr {
+  padding: 50px 0;
+  border-bottom: 1px solid #cdd1d4;
+}
+
+.social {
+  &__item {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  &__link {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    &--fb {
+      background: url("../img/sprite.svg#fb") center / cover no-repeat;
+    }
+    &--linkedin {
+      background: url("../img/sprite.svg#linkedin") center / cover no-repeat;
+    }
+    &--twitter {
+      background: url("../img/sprite.svg#twitter") center / cover no-repeat;
+    }
+    &--youtube {
+      background: url("../img/sprite.svg#youtube") center / cover no-repeat;
+    }
+    &--insta {
+      background: url("../img/sprite.svg#insta") center / cover no-repeat;
+    }
+  }
+}

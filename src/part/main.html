@@ -27,7 +27,7 @@
   </section>
 
   <section class="content">
-    <div class="container d-flex jcsb">
+    <div class="container d-flex aic jcsb">
       <div class="content__article article">
         <h2 class="title article__title">Light, Fast & Powerful</h2>
         <div class="article__descr">
@@ -71,7 +71,10 @@
         </div>
       </div>
       <div class="content__aside">
-        <img src="./img/sprite.svg#mobile" alt="" />
+        <svg>
+          <use href="./img/sprite.svg#mobile"></use>
+        </svg>
+        <!-- <img src="./img/sprite.svg#mobile" alt="" /> -->
       </div>
     </div>
   </section>
@@ -80,8 +83,10 @@
     <div class="container">
       <ul class="advantages__list">
         <li class="advantages__item d-flex aic">
-          <div class="advantages__img advantages__img--news">
-            <img src="./img/sprite.svg#news" alt="" />
+          <div class="advantages__img">
+            <svg class="advantages__img--news">
+              <use href="./img/sprite.svg#news"></use>
+            </svg>
           </div>
           <div class="advantages__article advantages__article--news article">
             <h2 class="title article__title">Light, Fast & Powerful</h2>
@@ -100,10 +105,12 @@
         </li>
 
         <li class="advantages__item d-flex aic">
-          <div class="advantages__img advantages__img--social">
-            <img src="./img/sprite.svg#social" alt="" />
+          <div class="advantages__img">
+            <svg class="advantages__img--social">
+              <use href="./img/sprite.svg#social"></use>
+            </svg>
           </div>
-          <div class="advantages__article advantages__article--social article">
+          <div class="advantages__article article">
             <h2 class="article__title title">Light, Fast & Powerful</h2>
             <div class="advantages__descr article__descr">
               <p>
@@ -120,10 +127,12 @@
         </li>
 
         <li class="advantages__item d-flex aic">
-          <div class="advantages__img advantages__img--mail">
-            <img src="./img/sprite.svg#mail" alt="" />
+          <div class="advantages__img">
+            <svg class="advantages__img--mail">
+              <use href="./img/sprite.svg#mail"></use>
+            </svg>
           </div>
-          <div class="advantages__article advantages__article--mail article">
+          <div class="advantages__article article">
             <h2 class="title article__title">Light, Fast & Powerful</h2>
             <div
               class="advantages__descr advantages__descr--mail article__descr"
@@ -152,20 +161,22 @@
   <section class="price">
     <div class="container">
       <div class="price__article">
-        <h2 class="title price__title">A Price To Suit Everyone</h2>
-        <p class="price__descr">
+        <h2 class="title article__title price__title">
+          A Price To Suit Everyone
+        </h2>
+        <p class="price__descr article__descr">
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
           commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
           et magnis dis parturient montes, nascetur ridiculus
         </p>
-        <p class="price__count">
-          <span>$40</span>
-          <span>UI Design Kit</span>
-        </p>
-
-        <span class="price__small-text">See, One price. Simple.</span>
-        <button class="price__btn btn-reset btn--fill">Purchase Now</button>
       </div>
+      <p class="price__value d-flex fdc">
+        <span class="price__number">$40</span>
+        <span class="price__note">UI Design Kit</span>
+        <span class="price__small-text">See, One price. Simple.</span>
+      </p>
+
+      <button class="price__btn btn btn-reset btn--fill">Purchase Now</button>
     </div>
   </section>
 </main>
